@@ -15,7 +15,7 @@ namespace Project.DAL.StrategyPattern
     public class MyInit:CreateDatabaseIfNotExists<MyContext>
     {
         protected override void Seed(MyContext context)
-        {
+        { 
             AppUser au = new AppUser();
             au.UserName = "crn";
             au.Password = DantexCrypt.Crypt("123");
