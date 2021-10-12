@@ -4,6 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Project.DAL.StrategyPattern;
 using Project.ENTITIES.Models;
 using Project.MAP.Options;
 
@@ -13,7 +14,7 @@ namespace Project.DAL.Context
     {
         public MyContext():base("MyConnection")
         {
-
+            Database.SetInitializer(new MyInit());
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
