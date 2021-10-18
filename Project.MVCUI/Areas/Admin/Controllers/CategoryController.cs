@@ -10,7 +10,7 @@ using System.Web.Mvc;
 
 namespace Project.MVCUI.Areas.Admin
 {
-    [AdminAuthentication]
+    
     public class CategoryController : Controller
     {
         CategoryRepository _cRep;

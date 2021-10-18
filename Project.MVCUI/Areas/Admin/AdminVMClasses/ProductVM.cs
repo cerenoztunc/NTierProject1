@@ -11,5 +11,6 @@ namespace Project.MVCUI.Areas.Admin.AdminVMClasses
         public List<Product> Products { get; set; }
         public Product Product { get; set; }
         public List<Category> Categories { get; set; }
+        public object ImagePath { get; internal set; }
     }
 }

@@ -113,7 +113,7 @@ namespace Project.BLL.DesignPattern.GenericRepository.BaseRep
             return _db.Set<T>().Select(exp).ToList();
         }
 
-        public void Update(T item)
+        public virtual void Update(T item)
         {
             item.Status = ENTITIES.Enums.DataStatus.Updated;
             item.ModifiedDate = DateTime.Now;
